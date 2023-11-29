@@ -2,3 +2,7 @@
 
 for char in 'abcdefghijklmnopqrstuvwxyz':
     print(char, end='')
+<<<<<<< HEAD
+=======
+    
+>>>>>>> origin/main
