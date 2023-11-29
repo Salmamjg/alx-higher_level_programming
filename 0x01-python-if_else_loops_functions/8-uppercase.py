@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 
 def uppercase(s):
+    result = ""
     for char in s:
         if ord('a') <= ord(char) <= ord('z'):
             to_uppercase = chr(ord(char) - ord('a') + ord('A'))
-            print("{}".format(to_uppercase), end='')
+            result += "{}".format(to_uppercase)
         else:
-            print("{}".format(char), end='')
+            result += "{}".format(char)
 
-    print()
+    print(result)
