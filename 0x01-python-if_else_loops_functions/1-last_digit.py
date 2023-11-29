@@ -7,7 +7,7 @@ if number < 0:
     last_digit_of = -(abs(number) % 10)
 else:
     last_digit_of = number % 10
-    
+
 if last_digit_of > 5:
     variable = "and is greater than 5"
 elif last_digit_of == 0:
