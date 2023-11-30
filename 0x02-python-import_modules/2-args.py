@@ -10,5 +10,5 @@ if __name__ == "__main__":
                   if num_arguments != 1 else '', ''
                   if num_arguments == 0 else ':'))
 
-    for i in range(1, num_arguments):
-        print("{:d}: {}".format(i, argv[i]))
+    for i, arg in enumerate(arg_list, start=1):
+        print("{}: {}".format(i, arg))
