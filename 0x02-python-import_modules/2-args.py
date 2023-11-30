@@ -6,7 +6,9 @@ if __name__ == "__main__":
     arg_list = argv[1:]
 
     print("{} argument{}{}"
-          .format(num_args, 's' if num_args != 1 else '', '' if num_args == 0 else ':'))
+          .format(num_args, 's'
+                  if num_args != 1 else '', '' 
+                  if num_args == 0 else ':'))
 
     for i, arg in enumerate(arg_list, start=1):
         print("{}: {}".format(i, arg))
