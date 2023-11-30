@@ -10,7 +10,7 @@ if __name__ == "__main__":
     a = int(argv[1])
     operator = argv[2]
     b = int(argv[3])
-    
+
     if operator == "+":
         result = add(a, b)
     elif operator == "-":
