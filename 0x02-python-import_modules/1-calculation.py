@@ -5,13 +5,8 @@ if __name__ == "__main__":
 
     a = 10
     b = 5
-    
-    addition = add(a, b)
-    substruction = sub(a, b)
-    multiplication = mul(a,b)
-    division = div(a,b)
-    
-    print("{:d} + {:d} = {:d}".format(a, b, addition))
-    print("{:d} + {:d} = {:d}".format(a, b, substruction))
-    print("{:d} + {:d} = {:d}".format(a, b, multiplication))
-    print("{:d} + {:d} = {:d}".format(a, b, division))
+
+    print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
+    print("{:d} + {:d} = {:d}".format(a, b, sub(a, b)))
+    print("{:d} + {:d} = {:d}".format(a, b, mul(a,b)))
+    print("{:d} + {:d} = {:d}".format(a, b, div(a,b)))
