@@ -5,4 +5,3 @@ def new_in_list(my_list, idx, element):
     second_list[idx] = element
 
     return second_list
- 
