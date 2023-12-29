@@ -4,5 +4,8 @@
 
 
 class Square:
-    """ Represents a square."""
+    """  Represents a square.
+
+    This class is currently empty and can be used as a template
+    for defining a square with attributes and methods."""
     pass
