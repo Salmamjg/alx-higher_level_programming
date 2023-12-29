@@ -29,7 +29,7 @@ class Square:
 
         Parameters:
         - value (int): The new size value.
-        
+
         Raises:
         - TypeError: If value is not an integer.
         - ValueError: If value is less than 0.
@@ -43,4 +43,4 @@ class Square:
 
     def area(self):
         """Compute the area of the square."""
-        return self.__size ** 2 
+        return self.__size ** 2
