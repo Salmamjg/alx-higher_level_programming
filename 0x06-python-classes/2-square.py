@@ -8,7 +8,6 @@ class Square:
 
     def __init__(self, size=0):
         """Initialize a new instance of the class.
-
         Parameters:
         - size (int): The size of the square. Default is 0.
 
