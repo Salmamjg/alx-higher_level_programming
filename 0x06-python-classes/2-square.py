@@ -4,30 +4,23 @@
 
 
 class square:
+    """
+    Represent a square.
+    """
     def __init__(self, size=0):
-        """
-        Initializes a new Square instance.
-
-        Args:
-            size (int, optional): The size of the square. Defaults to 0.
+        """Initialize a new instance of the class.
+    
+        Parameters:
+        - size (int): The size of the square. Default is 0.
+        
         Raises:
-            ValueError: If the given size is negative.
-            TypeError: If size is not an integer.
+        - TypeError: If size is not an integer.
+        - ValueError: If size is less than 0.
         """
-        try:
+        if not isinstance(size, int):
+            raise TypeError("Size must be an integer.")
+        elif size < 0:
+            raise ValueError("Size must be an integer")
+        else:
             self.__size = size
-            self.__validate_size()
-        except (TypeError, ValueError) as e:
-            print(f"Error: {e}")
-    def __validate_size(self):
-        """
-        Validates the size attribute.
-
-        Raises:
-            TypeError: If size is not an integer.
-            ValueError: If size is less than 0.
-        """
-        if not isinstance(self.__size, int):
-            raise TypeError("size must be an integer")
-        if self.__size < 0:
-            raise ValueError("size myst be >= 0")
+  
