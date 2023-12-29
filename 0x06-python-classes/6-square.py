@@ -6,7 +6,7 @@
 class Square:
     """Represent a square."""
 
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """Initialize a new instance of the class.
         Parameters:
         - size (int): The size of the square. Default is 0.
@@ -65,18 +65,23 @@ class Square:
 
         Parameters:
         - value (tuple): The new position value.
-        
+
         Raises:
         - TypeError: If value is not a tuple of 2 positive integers.
         - ValueError: If position contains non-positive integers.
         """
         try:
-            if not isinstance(value, tuple) or len(value) != 2 or not all(isinstance(i, int) for i in value) or any(i < 0 for i in value):
+            if (
+                not isinstance(value, tuple) or
+                len(value) != 2 or
+                not all(isinstance(i, int) for i in value) or
+                any(i < 0 for i in value)
+            ):
                 raise TypeError
             else:
                 self.__position = value
         except TypeError:
-            raise TypeError("Position must be a tuple containing two positive integers.")
+            raise TypeError("Position must be a tuple of 2 positive integers.")
 
     def area(self):
         """Compute the area of the square."""
