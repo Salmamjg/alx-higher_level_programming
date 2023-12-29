@@ -3,7 +3,7 @@
 """Define a class square"""
 
 
-class square:
+class Square:
     """Represent a square."""
     
     
