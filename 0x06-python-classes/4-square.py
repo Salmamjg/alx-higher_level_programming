@@ -8,7 +8,6 @@ class Square:
 
     def __init__(self, size=0):
         """Initialize a new instance of the class.
-
         Parameters:
         - size (int): The size of the square. Default is 0.
 
@@ -16,7 +15,16 @@ class Square:
         - TypeError: If size is not an integer.
         - ValueError: If size is less than 0.
         """
-        self.size = size
+        try:
+            self.__size = size
+            if size < 0:
+                raise ValueError
+            if type(size) is not int:
+                raise TypeError
+        except TypeError:
+            raise TypeError("size must be an integer")
+        except ValueError:
+            raise ValueError("size must be >= 0")
 
     @property
     def size(self):
@@ -34,12 +42,16 @@ class Square:
         - TypeError: If value is not an integer.
         - ValueError: If value is less than 0.
         """
-        if not isinstance(value, int):
-            raise TypeError("Size must be an integer.")
-        elif value < 0:
-            raise ValueError("size myst be an integer")
-        else:
-            self.__size = value
+        try:
+            self.__size =value
+            if value < 0:
+                raise ValueError
+            if type(value) is not int:
+                raise TypeError
+        except TypeError:
+            raise TypeError("size must be an integer")
+        except ValueError:
+            raise ValueError("size must be >= 0")
 
     def area(self):
         """Compute the area of the square."""
