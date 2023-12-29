@@ -43,7 +43,7 @@ class Square:
         - ValueError: If value is less than 0.
         """
         try:
-            self.__size =value
+            self.__size = value
             if value < 0:
                 raise ValueError
             if type(value) is not int:
