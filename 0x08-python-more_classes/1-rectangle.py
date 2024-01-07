@@ -3,18 +3,29 @@
 
 
 class Rectangle:
-    """A class representing a rectangle."""
+    """A class representing a rectangle.
+        Args:
+        width (int): The width of the rectangle. Default is 0.
+        height (int): The height of the rectangle. Default is 0.
+
+    Attributes:
+        __width (int): Private attribute representing the width.
+        __height (int): Private attribute representing the height.
+
+    Methods:
+        __init__(self, width=0, height=0): Initializes a new instance of the class.
+        width(self): Getter method for retrieving the width.
+        width(self, value): Setter method for setting the width.
+        height(self): Getter method for retrieving the height.
+        height(self, value): Setter method for setting the height.
+
+    Raises:
+        TypeError: If width or height is not an integer.
+        ValueError: If width or height is less than 0.
+    """
+
     def __init__(self, width=0, height=0):
-        """Initialize a new instance of the class.
-
-        Parameters:
-        - width (int): The width of the rectangle. Default is 0.
-        - height (int): The height of the rectangle. Default is 0.
-
-        Raises:
-        - TypeError: If width or height is not an integer.
-        - ValueError: If width or height is less than 0.
-        """
+        """Initialize a new instance of the class."""
         self.width = width
         self.height = height
 
