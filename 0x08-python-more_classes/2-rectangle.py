@@ -7,15 +7,6 @@ class Rectangle:
          Args:
         width (int): The width of the rectangle. Default is 0.
         height (int): The height of the rectangle. Default is 0.
-        
-        Methods:
-        __init__(self, width=0, height=0)
-        width(self)
-        width(self, value)
-        height(self)
-        height(self, value)
-        area(self)
-        perimeter(self)
     """
 
     def __init__(self, width=0, height=0):
@@ -57,8 +48,6 @@ class Rectangle:
 
     def perimeter(self):
         """Returns the rectangle perimeter."""
-        if self.__width == 0:
-            return 0
-        if self.__height == 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
         return (2 * self.__width) + (2 * self.height)
