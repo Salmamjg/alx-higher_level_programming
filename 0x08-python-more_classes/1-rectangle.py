@@ -25,15 +25,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """"Set or change the width of the rectangle.
-
-        Parameters:
-        - value (int): The new width value.
-
-        Raises:
-        - TypeError: If value is not an integer.
-        - ValueError: If value is less than 0.
-        """
+        """"Set or change the width of the rectangle."""
         if not isinstance(value, int):
             raise TypeError("Width must be an integer")
         if value < 0:
@@ -47,15 +39,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """Set or change the height of the rectangle.
-
-        Parameters:
-        - value (int): The new height value.
-
-        Raises:
-        - TypeError: If value is not integer.
-        - ValueError: If value is less than 0.
-        """
+        """Set or change the height of the rectangle."""
         if not isinstance(value, int):
             raise TypeError("Height must be an integer")
         if value < 0:
