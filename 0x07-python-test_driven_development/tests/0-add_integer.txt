@@ -1,0 +1,45 @@
+
+Importing the function from the module:
+    >>> import 0-add_integer
+    >>> add_integer = 0-add_integer.add_integer
+
+Test adding two integers
+    >>> add_integer(1, 2)
+    3
+
+Test adding two floats, they should be created to integers
+before addition
+    >>> add_integer(100.5, 200.7)
+    300
+
+Test adding a float an implicit integer (b defaults to 98)
+    >>> add_integer(100.5)
+    198
+
+Test passing a string as an argument, should raise a TypeError
+    >>> add_integer("100", 200)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+Test adding two negative integers
+    >>> add_integer(-1, -2)
+    -3
+
+Test adding a negative float and a positive integer
+    >>> add_integer(-100.5, 200)
+    99
+
+Test adding a negative integer and a positive float
+    >>> add_integer(-1, 2.5)
+    1
+
+Test adding two negative floats
+    >>> add_integer(-100.5, -200.5)
+    -301
+
+Test passing None as an argument, should raise a TypeError
+    >>> add_integer(None, 200)
+    Traceback(most recent call last):
+        ...
+    TypeError: a must be an integer
