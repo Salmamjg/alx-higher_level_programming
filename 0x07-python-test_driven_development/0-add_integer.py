@@ -9,7 +9,6 @@ add two numbers.
 
 def add_integer(a, b=98):
     """Add two integers or floats.
-
         This function adds two numbers 'a' and 'b'.
     If 'b' is not provided, it defaults to 98.
         Both 'a' and 'b' must be integers or floats,

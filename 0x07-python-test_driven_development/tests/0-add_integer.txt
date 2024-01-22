@@ -1,6 +1,7 @@
 Importing the function from the module:
     >>> import 0-add_integer
     >>> add_integer = 0-add_integer.add_integer
+
 Checking for module docstring:
     >>> k = __import__("0-add_integer.py").__doc__
     >>> len(k) > 1
