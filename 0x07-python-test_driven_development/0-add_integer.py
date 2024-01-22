@@ -12,7 +12,8 @@ def add_integer(a, b=98):
 
         This function adds two numbers 'a' and 'b'.
     If 'b' is not provided, it defaults to 98.
-        Both 'a' and 'b' must be integers or floats, otherwise a TypeError is raised.
+        Both 'a' and 'b' must be integers or floats,
+        otherwise a TypeError is raised.
         If 'a' and 'b' are floats, they are first casted to integers.
     The function returns an integer: the addition of 'a' and 'b'.
 
