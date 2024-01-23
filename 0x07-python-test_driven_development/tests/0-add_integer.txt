@@ -9,32 +9,26 @@ Checking for function docstring:
 >>> len(f) > 1
 True
 Checking regular addition:
-	 >>> add_integer(2, 3)
-	 5
-
+>>> add_integer(2, 3)
+5
 Checking positive with negative:
-	 >>> add_integer(2, -4)
-	 -2
-
+>>> add_integer(2, -4)
+-2
 Checking negative with positive:
-	 >>> add_integer(-6, 8)
-	 2
-
+>>> add_integer(-6, 8)
+2
 Checking addition over multiple values:
-	 >>> [add_integer(i, i ** 2) for i in range(6)]
-	 [0, 2, 6, 12, 20, 30]
-
+>>> [add_integer(i, i ** 2) for i in range(6)]
+[0, 2, 6, 12, 20, 30]
 Checking float with int:
-	 >>> add_integer(2.1, 4)
-	 6
-
+>>> add_integer(2.1, 4)
+6
 Checking int with float:
-	 >>> add_integer(5, 7.8)
-	 12
-
+>>> add_integer(5, 7.8)
+12
 Checking both float:
-	 >>> add_integer(2.45, 3.1)
-	 5
+>>> add_integer(2.45, 3.1)
+5
 # Test passing None as an argument, should raise a TypeError
 >>> add_integer(None, 200)
 Traceback (most recent call last):
