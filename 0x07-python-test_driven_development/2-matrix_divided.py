@@ -8,8 +8,10 @@ def matrix_divided(matrix, div):
         div (int or float): The number to divide each element of the matrix by.
 
     Returns:
-        list: A new matrix where each element is the result of dividing the corresponding element
-        in the original matrix by the specified number, rounded to 2 decimal places.
+        list: A new matrix where each element is the
+        result of dividing the corresponding element
+        in the original matrix by the specified number,
+        rounded to 2 decimal places.
 
     Raises:
         TypeError: If matrix is not a list of lists of integers or floats,
