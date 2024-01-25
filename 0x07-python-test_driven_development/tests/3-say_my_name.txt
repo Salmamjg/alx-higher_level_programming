@@ -1,0 +1,24 @@
+# Importing the function from the module:
+>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+# Test Case 1: Valid first name and last name
+>>> say_my_name("John", "Doe")
+My name is John Doe
+
+# Test Case 2: Valid first name only
+>>> say_my_name("John")
+
+#Test Case 3: Non-string first name
+>>> say_my_name(123, "Doe")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string or last_name
+must be a string
+
+# Test Case 4: Non-string last name
+>>> say_my_name("John", 123)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string or last_name
+must be a string
+
