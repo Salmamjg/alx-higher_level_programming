@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+This is the "3-say-my-name" module.
+The 3-say_my_name contain one function, say_my_name.
+"""
 def say_my_name(first_name, last_name=""):
     """
     Prints the string "My name is <first name> <last name>"
