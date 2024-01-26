@@ -1,7 +1,7 @@
 # test_text_indentation.txt
 
 # Importing the function from the module:
->>> text_indentation = __import__('5-text_indentation.txt').text_indentation
+>>> text_indentation = __import__("5-text_indentation").text_indentation
 
 # Test Case 1: Valid input with "."
 >>> text_indentation("This is a test. Another sentence.")
