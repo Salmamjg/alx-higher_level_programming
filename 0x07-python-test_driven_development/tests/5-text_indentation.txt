@@ -21,7 +21,9 @@ My name is John.
 >>> text_indentation("The time is 3:30 PM. Let's meet at 4:00 PM.")
 The time is 3:
 <BLANKLINE>
-30 PM. Let's meet at 4:
+30 PM.
+<BLANKLINE>
+Let's meet at 4:
 <BLANKLINE>
 00 PM.
 <BLANKLINE>

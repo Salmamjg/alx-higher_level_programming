@@ -3,6 +3,8 @@
 This module contains a function that prints a text with 2 new lines after
 each of these characters ., ?, :
 """
+
+
 def text_indentation(text):
     """
     Prints a text with 2 lines after each of these characters: ., ? and :
