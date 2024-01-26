@@ -7,14 +7,14 @@
 >>> text_indentation("This is a test. Another sentence.")
 This is a test.
 <BLANKLINE>
- Another sentence.
+Another sentence.
 <BLANKLINE>
 
 # Test Case 2: Valid input with "?"
 >>> text_indentation("What is your name? My name is John.")
 What is your name?
 <BLANKLINE>
- My name is John.
+My name is John.
 <BLANKLINE>
 
 # Test Case 3_ Valid input with ":"
