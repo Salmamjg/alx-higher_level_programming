@@ -1,0 +1,31 @@
+# Importing the function from the module:
+>>> print_square = __import__("4-print_square").print_square
+
+# Test Case 1: Print square of size 3
+>>> print_square(3)
+###
+###
+###
+
+# Test case 2: Print square of size 0
+>>> print_square(0)
+
+# Test case 3: Print square of size 5
+>>> print_square(5)
+#####
+#####
+#####
+#####
+#####
+
+# Test case 4: Try to point square with a negative size
+>>> print_square(-2)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+# Test case 5: Try to print square with a float size
+>>> print_square(2.5)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
