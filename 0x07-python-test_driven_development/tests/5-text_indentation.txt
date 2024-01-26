@@ -1,0 +1,20 @@
+# test_text_indentation.txt
+
+# Importing the function from the module:
+>>> text_indentation = __import__('5-text_indentation.txt').text_indentation
+
+# Test Case 1: Valid input with "."
+>>> text_indentation("This is a test. Another sentence.")
+This is a test.
+Another sentence.
+
+# Test Case 2: Valid input with "?"
+>>> text_indentation("What is your name? My name is John.")
+What is your name?
+My name is John.
+
+# Test Case 3_ Valid input with ":"
+>>> text_indentation("The time is 3:30 PM. Let's meet at 4:00 PM.")
+The time is 3:
+30 PM. Let's meet at 4:
+00 PM
