@@ -17,9 +17,11 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
-    for character in text:
+    for i, character in enumerate(text):
         if character in ['.', '?', ':']:
             print(character)
             print()
+            while i + 1 < len(text) and text[i + 1] == ' ':
+                i += 1
         else:
             print(character, end="")
