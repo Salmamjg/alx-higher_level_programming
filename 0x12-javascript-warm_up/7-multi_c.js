@@ -1,3 +1,4 @@
+#!/usr/bin/node
 const x = parseInt(process.argv[2], 10);
 if (!isNaN(x)){
     for(let i = 0; i < x; i++){
