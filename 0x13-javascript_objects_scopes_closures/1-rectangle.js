@@ -7,4 +7,4 @@ constructor (w, h) {
 }
 }
 
-export default Rectangle;
+module.exports = Rectangle;
